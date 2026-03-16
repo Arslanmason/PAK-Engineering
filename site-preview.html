@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAK Engineering | Premier Ship Repair & Marine Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Cormorant+Garamond:wght@600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'pak-blue': '#0A1E3C',
+                        'pak-red': '#C8102E',
+                        'pak-gold': '#D4AF37',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Cormorant Garamond', 'serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        @keyframes pulse-gold {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+        .animate-pulse-gold {
+            animation: pulse-gold 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-900 bg-white">
+
+    <!-- Navbar -->
+    <nav class="fixed top-0 w-full z-50 bg-pak-blue/90 backdrop-blur-md border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex items-center space-x-2">
+                    <div class="w-10 h-10 bg-pak-red rounded-lg flex items-center justify-center">
+                        <span class="text-white font-bold text-xl">P</span>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="text-white font-bold text-lg leading-none tracking-tight">PAK ENGINEERING</span>
+                        <span class="text-pak-gold text-[10px] font-bold tracking-[0.2em] uppercase">NIG LTD</span>
+                    </div>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#" class="text-white hover:text-pak-gold transition-colors font-medium">Home</a>
+                    <a href="#" class="text-white/80 hover:text-pak-gold transition-colors font-medium">About</a>
+                    <a href="#" class="text-white/80 hover:text-pak-gold transition-colors font-medium">Services</a>
+                    <a href="#" class="text-white/80 hover:text-pak-gold transition-colors font-medium">Projects</a>
+                    <a href="#" class="bg-pak-red text-white px-6 py-2 rounded-md hover:bg-red-700 transition-colors font-semibold">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative h-screen min-h-[600px] flex items-center pt-20 overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1559128010-7c1ad6e1b6a5?ixlib=rb-4.0.3&auto=format&fit=crop&w=2073&q=80" alt="Shipyard" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-pak-blue/80 mix-blend-multiply"></div>
+            <div class="absolute inset-0 bg-gradient-to-r from-pak-blue via-pak-blue/80 to-transparent"></div>
+        </div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+            <div class="max-w-3xl">
+                <div class="inline-flex items-center space-x-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full mb-6 border border-white/20">
+                    <span class="w-2 h-2 rounded-full bg-pak-gold animate-pulse-gold"></span>
+                    <span class="text-white text-sm font-medium tracking-wide uppercase">Excellence in Marine Engineering</span>
+                </div>
+                
+                <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
+                    Premier Ship Repair & <span class="text-pak-gold">Engineering</span> Solutions
+                </h1>
+                
+                <p class="text-lg md:text-xl text-gray-200 mb-10 max-w-2xl leading-relaxed">
+                    PAK Engineering NIG LTD delivers world-class marine engineering, ship repair, and fabrication services with uncompromising quality and precision.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="#" class="inline-flex justify-center items-center px-8 py-4 bg-pak-red text-white font-semibold rounded-md hover:bg-red-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+                        Explore Our Services
+                        <svg class="ml-2 h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                    </a>
+                    <a href="#" class="inline-flex justify-center items-center px-8 py-4 bg-white/10 backdrop-blur-sm border-2 border-white text-white font-semibold rounded-md hover:bg-white hover:text-pak-blue transition-all duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-1">
+                        Contact Us
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-none z-0 pointer-events-none">
+            <svg class="relative block w-full h-[50px] md:h-[100px]" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V95.8C59.71,118,130.85,121.3,201.3,114.5,242.4,110.6,283.4,98.6,321.39,56.44Z" fill="#f9fafb"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="bg-gray-50 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="text-4xl font-bold text-pak-blue mb-2">15+</div>
+                    <div class="text-sm text-gray-500 uppercase tracking-widest font-semibold">Years Experience</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl font-bold text-pak-blue mb-2">500+</div>
+                    <div class="text-sm text-gray-500 uppercase tracking-widest font-semibold">Vessels Repaired</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl font-bold text-pak-blue mb-2">50+</div>
+                    <div class="text-sm text-gray-500 uppercase tracking-widest font-semibold">Expert Engineers</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl font-bold text-pak-blue mb-2">24/7</div>
+                    <div class="text-sm text-gray-500 uppercase tracking-widest font-semibold">Support Available</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=1200&q=80" alt="About PAK Engineering" class="rounded-2xl shadow-2xl relative z-10">
+                    <div class="absolute -bottom-8 -right-8 w-64 h-64 bg-pak-gold/10 rounded-full -z-0"></div>
+                    <div class="absolute -top-8 -left-8 w-48 h-48 bg-pak-red/5 rounded-full -z-0"></div>
+                </div>
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <span class="w-12 h-1 bg-pak-red"></span>
+                        <h2 class="text-pak-red font-bold uppercase tracking-widest text-sm">About Our Company</h2>
+                    </div>
+                    <h3 class="text-4xl md:text-5xl font-serif font-bold text-pak-blue mb-6">Leading the Way in Marine Engineering</h3>
+                    <p class="text-gray-600 text-lg mb-8 leading-relaxed">
+                        PAK Engineering NIG LTD is a premier marine engineering and ship repair firm based in Lagos, Nigeria. With a strategic presence at the Nigerian Naval Dockyard, we provide unparalleled technical expertise to the maritime industry.
+                    </p>
+                    <ul class="space-y-4 mb-10">
+                        <li class="flex items-start space-x-3">
+                            <div class="mt-1 bg-pak-red/10 p-1 rounded-full text-pak-red">
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                            </div>
+                            <span class="text-gray-700 font-medium">Certified by major classification societies</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <div class="mt-1 bg-pak-red/10 p-1 rounded-full text-pak-red">
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                            </div>
+                            <span class="text-gray-700 font-medium">Strategic partnership with Naval Dockyard Lagos</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <div class="mt-1 bg-pak-red/10 p-1 rounded-full text-pak-red">
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                            </div>
+                            <span class="text-gray-700 font-medium">Uncompromising safety and quality standards</span>
+                        </li>
+                    </ul>
+                    <a href="#" class="inline-flex items-center text-pak-red font-bold hover:text-red-700 transition-colors">
+                        Learn More About Us <span class="ml-2">→</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <div class="flex items-center justify-center space-x-2 mb-4">
+                    <span class="w-12 h-1 bg-pak-red"></span>
+                    <h2 class="text-pak-red font-bold uppercase tracking-widest text-sm">Our Expertise</h2>
+                    <span class="w-12 h-1 bg-pak-red"></span>
+                </div>
+                <h3 class="text-4xl font-serif font-bold text-pak-blue mb-4">Comprehensive Marine Services</h3>
+                <p class="text-gray-600 text-lg">We offer a full spectrum of ship repair and engineering services, utilizing modern technology and industry best practices.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg group hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1544724569-5f546fd6f2b5?auto=format&fit=crop&w=1200&q=80" alt="Ship Repair" class="w-full h-full object-cover">
+                        <div class="absolute bottom-0 left-0 bg-pak-red text-white p-3 rounded-tr-xl">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z"></path></svg>
+                        </div>
+                    </div>
+                    <div class="p-6 border-b-4 border-transparent group-hover:border-pak-gold transition-colors duration-300">
+                        <h4 class="text-xl font-bold text-pak-blue mb-3">Ship Repair & Maintenance</h4>
+                        <p class="text-gray-600 mb-4">Comprehensive repair services for all types of vessels, including hull repairs, machinery overhauls, and electrical systems.</p>
+                        <a href="#" class="text-pak-red font-semibold hover:text-red-800">Read More →</a>
+                    </div>
+                </div>
+                <!-- Service 2 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg group hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1559128010-7c1ad6e1b6a5?auto=format&fit=crop&w=1200&q=80" alt="Dry Docking" class="w-full h-full object-cover">
+                        <div class="absolute bottom-0 left-0 bg-pak-red text-white p-3 rounded-tr-xl">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                        </div>
+                    </div>
+                    <div class="p-6 border-b-4 border-transparent group-hover:border-pak-gold transition-colors duration-300">
+                        <h4 class="text-xl font-bold text-pak-blue mb-3">Dry Docking</h4>
+                        <p class="text-gray-600 mb-4">Strategic partnerships with premier dockyards worldwide to provide extensive underwater repairs and inspections.</p>
+                        <a href="#" class="text-pak-red font-semibold hover:text-red-800">Read More →</a>
+                    </div>
+                </div>
+                <!-- Service 3 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg group hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&w=1200&q=80" alt="Fabrication" class="w-full h-full object-cover">
+                        <div class="absolute bottom-0 left-0 bg-pak-red text-white p-3 rounded-tr-xl">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"></path></svg>
+                        </div>
+                    </div>
+                    <div class="p-6 border-b-4 border-transparent group-hover:border-pak-gold transition-colors duration-300">
+                        <h4 class="text-xl font-bold text-pak-blue mb-3">Fabrication & Engineering</h4>
+                        <p class="text-gray-600 mb-4">Custom steel fabrication, piping systems, and heavy engineering solutions tailored to maritime requirements.</p>
+                        <a href="#" class="text-pak-red font-semibold hover:text-red-800">Read More →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="py-24 bg-white overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-20">
+                <div class="flex items-center justify-center space-x-2 mb-4">
+                    <span class="w-12 h-1 bg-pak-red"></span>
+                    <h2 class="text-pak-red font-bold uppercase tracking-widest text-xs">Why Choose Us</h2>
+                    <span class="w-12 h-1 bg-pak-red"></span>
+                </div>
+                <h3 class="text-4xl md:text-5xl font-serif font-bold text-pak-blue mb-6">The PAK Engineering Advantage</h3>
+                <p class="text-gray-600 text-lg leading-relaxed">We stand out in the maritime industry through our unwavering commitment to quality, safety, and client satisfaction.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="p-8 rounded-2xl border border-gray-100 bg-gray-50 hover:bg-white hover:shadow-2xl hover:shadow-pak-blue/5 transition-all duration-500 group relative overflow-hidden">
+                    <div class="absolute -right-4 -bottom-4 w-24 h-24 bg-pak-blue/5 rounded-full group-hover:scale-150 transition-transform duration-700 ease-out"></div>
+                    <div class="w-16 h-16 bg-pak-blue text-white rounded-xl flex items-center justify-center mb-8 shadow-lg shadow-pak-blue/20 group-hover:bg-pak-red group-hover:shadow-pak-red/20 transition-all duration-300 transform group-hover:rotate-6">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <h4 class="text-2xl font-bold text-pak-blue mb-4 group-hover:text-pak-red transition-colors duration-300">24/7 Emergency Response</h4>
+                    <p class="text-gray-600 leading-relaxed relative z-10">Round-the-clock availability for urgent marine repairs and critical maintenance to minimize vessel downtime.</p>
+                </div>
+                <!-- Feature 2 -->
+                <div class="p-8 rounded-2xl border border-gray-100 bg-gray-50 hover:bg-white hover:shadow-2xl hover:shadow-pak-blue/5 transition-all duration-500 group relative overflow-hidden">
+                    <div class="absolute -right-4 -bottom-4 w-24 h-24 bg-pak-blue/5 rounded-full group-hover:scale-150 transition-transform duration-700 ease-out"></div>
+                    <div class="w-16 h-16 bg-pak-blue text-white rounded-xl flex items-center justify-center mb-8 shadow-lg shadow-pak-blue/20 group-hover:bg-pak-red group-hover:shadow-pak-red/20 transition-all duration-300 transform group-hover:rotate-6">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                    </div>
+                    <h4 class="text-2xl font-bold text-pak-blue mb-4 group-hover:text-pak-red transition-colors duration-300">Uncompromising Safety</h4>
+                    <p class="text-gray-600 leading-relaxed relative z-10">Strict adherence to international maritime safety standards and environmental compliance in all our operations.</p>
+                </div>
+                <!-- Feature 3 -->
+                <div class="p-8 rounded-2xl border border-gray-100 bg-gray-50 hover:bg-white hover:shadow-2xl hover:shadow-pak-blue/5 transition-all duration-500 group relative overflow-hidden">
+                    <div class="absolute -right-4 -bottom-4 w-24 h-24 bg-pak-blue/5 rounded-full group-hover:scale-150 transition-transform duration-700 ease-out"></div>
+                    <div class="w-16 h-16 bg-pak-blue text-white rounded-xl flex items-center justify-center mb-8 shadow-lg shadow-pak-blue/20 group-hover:bg-pak-red group-hover:shadow-pak-red/20 transition-all duration-300 transform group-hover:rotate-6">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
+                    </div>
+                    <h4 class="text-2xl font-bold text-pak-blue mb-4 group-hover:text-pak-red transition-colors duration-300">Advanced Facilities</h4>
+                    <p class="text-gray-600 leading-relaxed relative z-10">Equipped with state-of-the-art tools and dry docking capabilities to handle vessels of various sizes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-pak-blue relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+            <img src="https://images.unsplash.com/photo-1559128010-7c1ad6e1b6a5?auto=format&fit=crop&w=2073&q=80" alt="Background" class="w-full h-full object-cover">
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <h2 class="text-4xl md:text-5xl font-serif font-bold text-white mb-6">Ready to Discuss Your Next Project?</h2>
+            <p class="text-xl text-gray-300 mb-10 max-w-2xl mx-auto">Our team of experts is ready to provide you with the best marine engineering solutions.</p>
+            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6">
+                <a href="#" class="px-10 py-4 bg-pak-red text-white font-bold rounded-md hover:bg-red-700 transition-all shadow-lg">Get a Free Quote</a>
+                <a href="#" class="px-10 py-4 bg-transparent border-2 border-white text-white font-bold rounded-md hover:bg-white hover:text-pak-blue transition-all">Contact Support</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-20 pb-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+                <div>
+                    <div class="flex items-center space-x-2 mb-6">
+                        <div class="w-8 h-8 bg-pak-red rounded flex items-center justify-center">
+                            <span class="text-white font-bold">P</span>
+                        </div>
+                        <span class="font-bold text-lg tracking-tight">PAK ENGINEERING</span>
+                    </div>
+                    <p class="text-gray-400 leading-relaxed mb-6">Premier marine engineering and ship repair firm based in Lagos, Nigeria. Delivering excellence since 2008.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-6 border-b border-pak-red pb-2 inline-block">Quick Links</h4>
+                    <ul class="space-y-3 text-gray-400">
+                        <li><a href="#" class="hover:text-pak-gold transition-colors">Home</a></li>
+                        <li><a href="#" class="hover:text-pak-gold transition-colors">About Us</a></li>
+                        <li><a href="#" class="hover:text-pak-gold transition-colors">Services</a></li>
+                        <li><a href="#" class="hover:text-pak-gold transition-colors">Projects</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-6 border-b border-pak-red pb-2 inline-block">Services</h4>
+                    <ul class="space-y-3 text-gray-400">
+                        <li><a href="#" class="hover:text-pak-gold transition-colors">Ship Repair</a></li>
+                        <li><a href="#" class="hover:text-pak-gold transition-colors">Dry Docking</a></li>
+                        <li><a href="#" class="hover:text-pak-gold transition-colors">Fabrication</a></li>
+                        <li><a href="#" class="hover:text-pak-gold transition-colors">Electroplating</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-6 border-b border-pak-red pb-2 inline-block">Contact Info</h4>
+                    <ul class="space-y-4 text-gray-400">
+                        <li class="flex items-start space-x-3">
+                            <svg class="w-5 h-5 text-pak-red mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                            <span>Nigerian Naval Dockyard, Victoria Island, Lagos, Nigeria</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <svg class="w-5 h-5 text-pak-red" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                            <span>+234 803 123 4567</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <svg class="w-5 h-5 text-pak-red" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                            <span>info@pakengineering.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-500 text-sm">
+                <p>&copy; 2026 PAK Engineering NIG LTD. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
